@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export const ErrorUrl = () => {
+const ErrorUrl = () => {
   const navigate = useNavigate();
   useEffect(() => {
     navigate('/');
@@ -9,3 +9,5 @@ export const ErrorUrl = () => {
 
   return <h3>Navigate to Homepage</h3>;
 };
+
+export default ErrorUrl;

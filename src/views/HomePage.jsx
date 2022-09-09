@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import * as API from '../services/api';
 import { FilmList } from 'components/FilmList/FilmList';
 
-export const HomePage = () => {
+const HomePage = () => {
   const [trendingMovies, setTrendingMovies] = useState(null);
 
   useEffect(() => {
@@ -16,3 +16,5 @@ export const HomePage = () => {
     </div>
   );
 };
+
+export default HomePage;

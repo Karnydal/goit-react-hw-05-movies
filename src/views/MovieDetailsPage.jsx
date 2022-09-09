@@ -20,7 +20,7 @@ import {
 const Cast = lazy(() => import('../views/Cast'));
 const Reviews = lazy(() => import('../views/Reviews'));
 
-export const MovieDetailsPage = () => {
+const MovieDetailsPage = () => {
   const [movie, setMovie] = useState(null);
   const [buttonPlace, setButtonPlace] = useState(null);
   let { movieId } = useParams();
@@ -83,3 +83,5 @@ export const MovieDetailsPage = () => {
     )
   );
 };
+
+export default MovieDetailsPage;
